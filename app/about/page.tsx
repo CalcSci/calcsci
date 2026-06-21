@@ -1,35 +1,59 @@
+
 export default function AboutPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-6">About CalcSci</h1>
+         <main className="bg-gray-50 min-h-screen">
 
-      <p className="mb-4">
-        Welcome to CalcSci, your trusted destination for free online
-        calculators and scientific tools.
-      </p>
+        <section className="bg-blue-600 text-white py-20 text-center">
+          <h1 className="text-5xl font-bold mb-4">
+            About CalcSci
+          </h1>
 
-      <p className="mb-4">
-        Our mission is to simplify complex calculations through accurate,
-        easy-to-use, and fast web-based tools.
-      </p>
+          <p className="text-xl">
+            Free Online Calculators & Scientific Tools
+          </p>
+        </section>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">
-        What We Offer
-      </h2>
+        <section className="max-w-5xl mx-auto px-6 py-16">
 
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Mathematics Calculators</li>
-        <li>Finance Calculators</li>
-        <li>Health & Fitness Calculators</li>
-        <li>Unit Conversion Tools</li>
-        <li>Engineering Calculators</li>
-        <li>Educational Calculation Tools</li>
-      </ul>
+          <div className="bg-white p-8 rounded-2xl shadow-lg mb-10">
+            <h2 className="text-3xl font-bold mb-4">
+              Our Mission
+            </h2>
 
-      <p className="mt-8">
-        We believe everyone should have access to reliable calculation tools
-        without downloading apps or paying subscriptions.
-      </p>
-    </main>
+            <p className="text-gray-700">
+              CalcSci aims to make calculations simple,
+              accurate and accessible to everyone.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+
+            <div className="bg-blue-100 p-6 rounded-2xl shadow">
+              <h3 className="text-xl font-bold mb-2">
+                Finance
+              </h3>
+              <p>EMI, SIP, GST and loan calculators.</p>
+            </div>
+
+            <div className="bg-green-100 p-6 rounded-2xl shadow">
+              <h3 className="text-xl font-bold mb-2">
+                Health
+              </h3>
+              <p>BMI, calorie and pregnancy calculators.</p>
+            </div>
+
+            <div className="bg-purple-100 p-6 rounded-2xl shadow">
+              <h3 className="text-xl font-bold mb-2">
+                Science
+              </h3>
+              <p>Engineering and educational calculators.</p>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
   );
 }

@@ -1,17 +1,59 @@
+"use client";
+
+import Link from "next/link";
+import { useMemo, useState } from "react";
+
 export default function Home() {
+  const [search, setSearch] = useState("");
+
+  const calculators = [
+  {
+    name: "Age Calculator",
+    icon: "📅",
+    href: "/utility/age-calculator",
+  },
+  {
+    name: "BMI Calculator",
+    icon: "⚖️",
+    href: "/utility/bmi-calculator",
+  },
+  {
+    name: "EMI Calculator",
+    icon: "💰",
+    href: "/finance/emi-calculator",
+  },
+  {
+    name: "GST Calculator",
+    icon: "🧾",
+    href: "/finance/gst-calculator",
+  },
+];
+
+  const filteredCalculators = useMemo(() => {
+    return calculators.filter((calculator) =>
+      calculator.name
+        .toLowerCase()
+        .includes(search.toLowerCase())
+    );
+  }, [search]);
+
   return (
-    <main className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-blue-600 text-white py-6 shadow-md">
-        <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl font-bold">CalcSci</h1>
-          <p className="mt-2 text-lg">
-            Smart Calculators for Everyday Life & Engineering
+    <main className="bg-gray-50">
+      {/* Hero */}
+      <section className="bg-blue-600 text-white py-12 shadow-md">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-5xl font-bold">
+            CalcSci
+          </h1>
+
+          <p className="mt-4 text-xl">
+            Smart Calculators for Everyday Life &
+            Engineering
           </p>
         </div>
-      </header>
+      </section>
 
-      {/* Hero Section */}
+      {/* Search */}
       <section className="max-w-6xl mx-auto px-6 py-12 text-center">
         <h2 className="text-3xl font-bold text-gray-800">
           Find the Right Calculator in Seconds
@@ -20,50 +62,110 @@ export default function Home() {
         <input
           type="text"
           placeholder="Search calculators..."
+          value={search}
+          onChange={(e) =>
+            setSearch(e.target.value)
+          }
           className="mt-8 w-full max-w-2xl p-4 rounded-xl border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+
+        {search && (
+          <div className="max-w-2xl mx-auto mt-4 bg-white rounded-xl shadow-md p-4 text-left">
+            {filteredCalculators.length > 0 ? (
+              filteredCalculators.map(
+                (calculator) => (
+                  <Link
+                    key={calculator.href}
+                    href={calculator.href}
+                    className="block p-3 rounded-lg hover:bg-blue-50"
+                  >
+                    {calculator.icon}{" "}
+                    {calculator.name}
+                  </Link>
+                )
+              )
+            ) : (
+              <p className="text-gray-500">
+                No calculators found.
+              </p>
+            )}
+          </div>
+        )}
       </section>
 
       {/* Categories */}
       <section className="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-3 pb-16">
         {/* Finance */}
-        <div className="bg-white rounded-2xl shadow-md p-6">
-          <h3 className="text-2xl font-bold mb-4">📊 Finance</h3>
+        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+          <h3 className="text-2xl font-bold mb-6 text-blue-600">
+            📊 Finance
+          </h3>
 
-          <ul className="space-y-2">
-            <li>💰 EMI Calculator</li>
-            <li>📈 SIP Calculator</li>
-            <li>🧾 GST Calculator</li>
-          </ul>
+          <div className="space-y-3">
+            <Link href="/finance/emi-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                💰 EMI Calculator
+              </div>
+            </Link>
+
+            <div className="bg-gray-100 p-3 rounded-xl">
+              📈 SIP Calculator
+            </div>
+
+            <Link href="/finance/gst-calculator">
+            <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+            🧾 GST Calculator
+            </div>
+            </Link>
+          </div>
         </div>
 
         {/* Utility */}
-        <div className="bg-white rounded-2xl shadow-md p-6">
-          <h3 className="text-2xl font-bold mb-4">🧮 Utility</h3>
+        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+          <h3 className="text-2xl font-bold mb-6 text-blue-600">
+            🧮 Utility
+          </h3>
 
-          <ul className="space-y-2">
-            <li>📅 Age Calculator</li>
-            <li>⚖️ BMI Calculator</li>
-            <li>⛽ Fuel Cost Calculator</li>
-          </ul>
+          <div className="space-y-3">
+            <Link href="/utility/age-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                📅 Age Calculator
+              </div>
+            </Link>
+
+            <Link href="/utility/bmi-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                ⚖️ BMI Calculator
+              </div>
+            </Link>
+
+            <div className="bg-gray-100 p-3 rounded-xl">
+              ⛽ Fuel Cost Calculator
+            </div>
+          </div>
         </div>
 
         {/* Engineering */}
-        <div className="bg-white rounded-2xl shadow-md p-6">
-          <h3 className="text-2xl font-bold mb-4">⚙️ Engineering</h3>
+        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+          <h3 className="text-2xl font-bold mb-6 text-blue-600">
+            ⚙️ Engineering
+          </h3>
 
-          <ul className="space-y-2">
-            <li>🔌 Ohm's Law Calculator</li>
-            <li>💻 Binary Converter</li>
-            <li>📡 dB Calculator</li>
-          </ul>
+          <div className="space-y-3">
+            <div className="bg-gray-100 p-3 rounded-xl">
+              🔌 Ohm&apos;s Law Calculator
+            </div>
+
+            <div className="bg-gray-100 p-3 rounded-xl">
+              💻 Binary Converter
+            </div>
+
+            <div className="bg-gray-100 p-3 rounded-xl">
+              📡 dB Calculator
+            </div>
+          </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-6 text-center">
-        © 2026 CalcSci.com | Smart Calculators for Everyone
-      </footer>
     </main>
   );
 }

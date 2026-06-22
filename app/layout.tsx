@@ -34,6 +34,14 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "CalcSci - Free Online Calculators & Scientific Tools",
+    description:
+      "Free online calculators for finance, health, education, engineering and science.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

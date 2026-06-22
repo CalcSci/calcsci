@@ -7,27 +7,27 @@ export default function Home() {
   const [search, setSearch] = useState("");
 
   const calculators = [
-  {
-    name: "Age Calculator",
-    icon: "📅",
-    href: "/utility/age-calculator",
-  },
-  {
-    name: "BMI Calculator",
-    icon: "⚖️",
-    href: "/utility/bmi-calculator",
-  },
-  {
-    name: "EMI Calculator",
-    icon: "💰",
-    href: "/finance/emi-calculator",
-  },
-  {
-    name: "GST Calculator",
-    icon: "🧾",
-    href: "/finance/gst-calculator",
-  },
-];
+    {
+      name: "Age Calculator",
+      icon: "📅",
+      href: "/utility/age-calculator",
+    },
+    {
+      name: "BMI Calculator",
+      icon: "⚖️",
+      href: "/utility/bmi-calculator",
+    },
+    {
+      name: "EMI Calculator",
+      icon: "💰",
+      href: "/finance/emi-calculator",
+    },
+    {
+      name: "GST Calculator",
+      icon: "🧾",
+      href: "/finance/gst-calculator",
+    },
+  ];
 
   const filteredCalculators = useMemo(() => {
     return calculators.filter((calculator) =>
@@ -39,6 +39,25 @@ export default function Home() {
 
   return (
     <main className="bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "CalcSci",
+            url: "https://www.calcsci.com",
+            potentialAction: {
+              "@type": "SearchAction",
+              target:
+                "https://www.calcsci.com/?q={search_term_string}",
+              "query-input":
+                "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="bg-blue-600 text-white py-12 shadow-md">
         <div className="max-w-6xl mx-auto px-6 text-center">
@@ -113,9 +132,9 @@ export default function Home() {
             </div>
 
             <Link href="/finance/gst-calculator">
-            <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
-            🧾 GST Calculator
-            </div>
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                🧾 GST Calculator
+              </div>
             </Link>
           </div>
         </div>

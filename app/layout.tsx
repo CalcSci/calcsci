@@ -11,6 +11,29 @@ export const metadata: Metadata = {
   title: "CalcSci - Free Online Calculators & Scientific Tools",
   description:
     "Free online calculators for finance, health, education, engineering and science.",
+
+  metadataBase: new URL("https://www.calcsci.com"),
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "CalcSci - Free Online Calculators & Scientific Tools",
+    description:
+      "Free online calculators for finance, health, education, engineering and science.",
+    url: "https://www.calcsci.com",
+    siteName: "CalcSci",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CalcSci - Free Online Calculators & Scientific Tools",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

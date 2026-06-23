@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export default function BMICalculatorPage() {
   const [height, setHeight] = useState("");
@@ -37,7 +38,24 @@ export default function BMICalculatorPage() {
   };
 
   return (
-    <main className="bg-gray-50 min-h-screen">
+  <>
+    <BreadcrumbSchema
+      items={[
+        {
+          name: "Home",
+          url: "/",
+        },
+        {
+          name: "Utility",
+          url: "/utility",
+        },
+        {
+          name: "BMI Calculator",
+          url: "/utility/bmi-calculator",
+        },
+      ]}
+    />
+        <main className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-16 text-center">
         <h1 className="text-5xl font-bold mb-4">
@@ -143,6 +161,7 @@ export default function BMICalculatorPage() {
 
         </div>
       </section>
-    </main>
+       </main>
+  </>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export default function EMICalculatorPage() {
   const [loanAmount, setLoanAmount] = useState("");
@@ -39,7 +40,24 @@ export default function EMICalculatorPage() {
   };
 
   return (
-    <main className="bg-gray-50 min-h-screen">
+  <>
+    <BreadcrumbSchema
+      items={[
+        {
+          name: "Home",
+          url: "/",
+        },
+        {
+          name: "Finance",
+          url: "/finance",
+        },
+        {
+          name: "EMI Calculator",
+          url: "/finance/emi-calculator",
+        },
+      ]}
+    />
+        <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
       <section className="bg-blue-600 text-white py-16 text-center">
         <h1 className="text-5xl font-bold mb-4">
@@ -175,6 +193,7 @@ export default function EMICalculatorPage() {
 
         </div>
       </section>
-    </main>
+        </main>
+  </>
   );
 }

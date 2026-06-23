@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export default function GSTCalculatorPage() {
   const [amount, setAmount] = useState("");
   const [gstRate, setGstRate] = useState("18");
@@ -36,6 +36,23 @@ export default function GSTCalculatorPage() {
   };
 
   return (
+  <>
+    <BreadcrumbSchema
+      items={[
+        {
+          name: "Home",
+          url: "/",
+        },
+        {
+          name: "Finance",
+          url: "/finance",
+        },
+        {
+          name: "GST Calculator",
+          url: "/finance/gst-calculator",
+        },
+      ]}
+    />
     <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
       <section className="bg-blue-600 text-white py-16 text-center">
@@ -175,6 +192,7 @@ export default function GSTCalculatorPage() {
 
         </div>
       </section>
-    </main>
+       </main>
+  </>
   );
 }

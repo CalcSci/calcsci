@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+
 
 export default function AgeCalculatorPage() {
   const currentYear = new Date().getFullYear();
@@ -102,6 +104,24 @@ export default function AgeCalculatorPage() {
   };
 
   return (
+  <>
+    <BreadcrumbSchema
+      items={[
+        {
+          name: "Home",
+          url: "/",
+        },
+        {
+          name: "Utility",
+          url: "/utility",
+        },
+        {
+          name: "Age Calculator",
+          url: "/utility/age-calculator",
+        },
+      ]}
+    />
+
     <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
       <section className="bg-blue-600 text-white py-16 text-center">
@@ -221,6 +241,7 @@ export default function AgeCalculatorPage() {
 
         </div>
       </section>
-    </main>
+        </main>
+  </>
   );
 }

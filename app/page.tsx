@@ -28,6 +28,11 @@ export default function Home() {
       href: "/utility/date-difference-calculator",
     },
     {
+      name: "SIP Calculator",
+      icon: "📈",
+      href: "/finance/sip-calculator",
+    },
+    {
       name: "EMI Calculator",
       icon: "💰",
       href: "/finance/emi-calculator",
@@ -137,9 +142,11 @@ export default function Home() {
               </div>
             </Link>
 
-            <div className="bg-gray-100 p-3 rounded-xl">
-              📈 SIP Calculator
-            </div>
+            <Link href="/finance/sip-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                📈 SIP Calculator
+              </div>
+            </Link>
 
             <Link href="/finance/gst-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">

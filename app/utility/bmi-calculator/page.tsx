@@ -3,6 +3,7 @@
 import { useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CalculatorSchema from "@/components/CalculatorSchema";
+import FAQSchema from "@/components/FAQSchema";
 
 export default function BMICalculatorPage() {
   const [height, setHeight] = useState("");
@@ -60,6 +61,25 @@ export default function BMICalculatorPage() {
       name="BMI Calculator"
       description="Free BMI Calculator to calculate Body Mass Index and determine whether you are underweight, normal, overweight or obese."
       url="/utility/bmi-calculator"
+    />
+    <FAQSchema
+      faqs={[
+        {
+          question: "What is BMI?",
+          answer:
+            "BMI (Body Mass Index) is a measure that uses your height and weight to estimate whether your weight is healthy.",
+        },
+        {
+          question: "How is BMI calculated?",
+          answer:
+            "BMI is calculated by dividing weight in kilograms by height in meters squared.",
+        },
+        {
+          question: "What is a healthy BMI range?",
+          answer:
+            "A BMI between 18.5 and 24.9 is generally considered healthy for most adults.",
+        },
+      ]}
     />
         <main className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
@@ -165,6 +185,39 @@ export default function BMICalculatorPage() {
             <li>Obese: 30 and above</li>
           </ul>
 
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="bg-white rounded-2xl shadow-md p-8 mt-8">
+          <h2 className="text-3xl font-bold mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-lg">
+                What is BMI?
+              </h3>
+              <p className="text-gray-700">
+                BMI stands for Body Mass Index and helps estimate whether your weight is appropriate for your height.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                How is BMI calculated?
+              </h3>
+              <p className="text-gray-700">
+                BMI is calculated using weight and height measurements.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                What is a healthy BMI?
+              </h3>
+              <p className="text-gray-700">
+                A BMI between 18.5 and 24.9 is generally considered healthy.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
        </main>

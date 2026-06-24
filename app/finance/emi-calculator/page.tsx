@@ -3,6 +3,7 @@
 import { useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CalculatorSchema from "@/components/CalculatorSchema";
+import FAQSchema from "@/components/FAQSchema";
 
 export default function EMICalculatorPage() {
   const [loanAmount, setLoanAmount] = useState("");
@@ -62,6 +63,25 @@ export default function EMICalculatorPage() {
       name="EMI Calculator"
       description="Free EMI Calculator to calculate monthly loan EMI, total interest and total payment."
       url="/finance/emi-calculator"
+    />
+    <FAQSchema
+      faqs={[
+        {
+          question: "What is EMI?",
+          answer:
+            "EMI stands for Equated Monthly Installment and represents the fixed monthly payment made towards a loan.",
+        },
+        {
+          question: "How is EMI calculated?",
+          answer:
+            "EMI is calculated using the loan amount, interest rate and loan tenure.",
+        },
+        {
+          question: "Can I reduce my EMI amount?",
+          answer:
+            "Yes, EMI can be reduced by increasing the loan tenure or obtaining a lower interest rate.",
+        },
+      ]}
     />
         <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
@@ -197,6 +217,39 @@ export default function EMICalculatorPage() {
             <li>Total amount payable to the lender</li>
           </ul>
 
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="bg-white rounded-2xl shadow-md p-8 mt-8">
+          <h2 className="text-3xl font-bold mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-lg">
+                What is EMI?
+              </h3>
+              <p className="text-gray-700">
+                EMI is the fixed monthly amount paid towards repayment of a loan.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                How is EMI calculated?
+              </h3>
+              <p className="text-gray-700">
+                EMI depends on loan amount, interest rate and tenure.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                Can EMI be reduced?
+              </h3>
+              <p className="text-gray-700">
+                Yes, a longer tenure or lower interest rate can reduce EMI.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
         </main>

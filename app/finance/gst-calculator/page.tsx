@@ -3,6 +3,7 @@
 import { useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CalculatorSchema from "@/components/CalculatorSchema";
+import FAQSchema from "@/components/FAQSchema";
 export default function GSTCalculatorPage() {
   const [amount, setAmount] = useState("");
   const [gstRate, setGstRate] = useState("18");
@@ -58,6 +59,25 @@ export default function GSTCalculatorPage() {
       name="GST Calculator"
       description="Free GST Calculator to calculate GST amount, GST inclusive price and GST exclusive price instantly."
       url="/finance/gst-calculator"
+    />
+    <FAQSchema
+      faqs={[
+        {
+          question: "What is GST?",
+          answer:
+            "GST (Goods and Services Tax) is an indirect tax applied to goods and services in India.",
+        },
+        {
+          question: "How do I calculate GST?",
+          answer:
+            "GST can be calculated by applying the GST percentage to the taxable amount.",
+        },
+        {
+          question: "Can I calculate GST inclusive and exclusive prices?",
+          answer:
+            "Yes, this calculator can calculate both GST-inclusive and GST-exclusive values.",
+        },
+      ]}
     />
     <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
@@ -196,6 +216,39 @@ export default function GSTCalculatorPage() {
             <li>28% GST</li>
           </ul>
 
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="bg-white rounded-2xl shadow-md p-8 mt-8">
+          <h2 className="text-3xl font-bold mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-lg">
+                What is GST?
+              </h3>
+              <p className="text-gray-700">
+                GST is a tax applied to the supply of goods and services.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                How is GST calculated?
+              </h3>
+              <p className="text-gray-700">
+                GST is calculated by applying the GST rate to the taxable value.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                Can I calculate GST inclusive prices?
+              </h3>
+              <p className="text-gray-700">
+                Yes, the calculator supports both GST-inclusive and GST-exclusive calculations.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
        </main>

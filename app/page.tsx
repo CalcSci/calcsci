@@ -23,6 +23,11 @@ export default function Home() {
       href: "/utility/percentage-calculator",
     },
     {
+      name: "Date Difference Calculator",
+      icon: "📆",
+      href: "/utility/date-difference-calculator",
+    },
+    {
       name: "EMI Calculator",
       icon: "💰",
       href: "/finance/emi-calculator",
@@ -166,6 +171,12 @@ export default function Home() {
             <Link href="/utility/percentage-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 📊 Percentage Calculator
+              </div>
+            </Link>
+
+            <Link href="/utility/date-difference-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                📆 Date Difference Calculator
               </div>
             </Link>
 

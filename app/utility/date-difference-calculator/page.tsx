@@ -152,6 +152,33 @@ export default function DateDifferenceCalculatorPage() {
               Useful for age calculations, project planning,
               travel planning and financial calculations.
             </p>
+            <h2 className="text-2xl font-bold mt-8 mb-6">
+              Frequently Asked Questions
+            </h2>
+            <h3 className="font-semibold mb-2">
+              How do I calculate the difference between two dates?
+            </h3>
+            <p className="mb-4 text-gray-700">
+              Select a start date and an end date and the calculator will instantly show the number of days between them.
+            </p>
+            <h3 className="font-semibold mb-2">
+              Does the calculator account for leap years?
+            </h3>
+            <p className="mb-4 text-gray-700">
+              Yes. Leap years and varying month lengths are automatically considered.
+            </p>
+            <h3 className="font-semibold mb-2">
+              Can I calculate years and months?
+            </h3>
+            <p className="mb-4 text-gray-700">
+              Yes. Date difference calculations can be converted into years, months and days.
+            </p>
+            <h3 className="font-semibold mb-2">
+              Is the calculator free?
+            </h3>
+            <p className="text-gray-700">
+              Yes. The Date Difference Calculator on CalcSci is completely free.
+            </p>
           </div>
         </section>
       </main>

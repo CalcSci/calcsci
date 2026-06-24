@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import CalculatorSchema from "@/components/CalculatorSchema";
 export default function GSTCalculatorPage() {
   const [amount, setAmount] = useState("");
   const [gstRate, setGstRate] = useState("18");
@@ -52,6 +53,11 @@ export default function GSTCalculatorPage() {
           url: "/finance/gst-calculator",
         },
       ]}
+    />
+    <CalculatorSchema
+      name="GST Calculator"
+      description="Free GST Calculator to calculate GST amount, GST inclusive price and GST exclusive price instantly."
+      url="/finance/gst-calculator"
     />
     <main className="bg-gray-50 min-h-screen">
       {/* Hero */}

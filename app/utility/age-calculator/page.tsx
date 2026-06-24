@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import CalculatorSchema from "@/components/CalculatorSchema";
 
 
 export default function AgeCalculatorPage() {
@@ -120,6 +121,16 @@ export default function AgeCalculatorPage() {
           url: "/utility/age-calculator",
         },
       ]}
+    />
+    <CalculatorSchema
+      name="Age Calculator"
+      description="Free online Age Calculator to calculate your exact age in years, months and days."
+      url="/utility/age-calculator"
+    />
+    <CalculatorSchema
+      name="Age Calculator"
+      description="Free online Age Calculator to calculate your exact age in years, months and days."
+      url="/utility/age-calculator"
     />
 
     <main className="bg-gray-50 min-h-screen">

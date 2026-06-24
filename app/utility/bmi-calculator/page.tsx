@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import CalculatorSchema from "@/components/CalculatorSchema";
 
 export default function BMICalculatorPage() {
   const [height, setHeight] = useState("");
@@ -54,6 +55,11 @@ export default function BMICalculatorPage() {
           url: "/utility/bmi-calculator",
         },
       ]}
+    />
+    <CalculatorSchema
+      name="BMI Calculator"
+      description="Free BMI Calculator to calculate Body Mass Index and determine whether you are underweight, normal, overweight or obese."
+      url="/utility/bmi-calculator"
     />
         <main className="bg-gray-50 min-h-screen">
       {/* Hero Section */}

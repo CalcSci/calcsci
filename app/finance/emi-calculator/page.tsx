@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import CalculatorSchema from "@/components/CalculatorSchema";
 
 export default function EMICalculatorPage() {
   const [loanAmount, setLoanAmount] = useState("");
@@ -56,6 +57,11 @@ export default function EMICalculatorPage() {
           url: "/finance/emi-calculator",
         },
       ]}
+    />
+    <CalculatorSchema
+      name="EMI Calculator"
+      description="Free EMI Calculator to calculate monthly loan EMI, total interest and total payment."
+      url="/finance/emi-calculator"
     />
         <main className="bg-gray-50 min-h-screen">
       {/* Hero */}

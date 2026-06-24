@@ -18,6 +18,11 @@ export default function Home() {
       href: "/utility/bmi-calculator",
     },
     {
+      name: "Percentage Calculator",
+      icon: "📊",
+      href: "/utility/percentage-calculator",
+    },
+    {
       name: "EMI Calculator",
       icon: "💰",
       href: "/finance/emi-calculator",
@@ -155,6 +160,12 @@ export default function Home() {
             <Link href="/utility/bmi-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 ⚖️ BMI Calculator
+              </div>
+            </Link>
+
+            <Link href="/utility/percentage-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                📊 Percentage Calculator
               </div>
             </Link>
 

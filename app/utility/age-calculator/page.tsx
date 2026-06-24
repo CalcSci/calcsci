@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CalculatorSchema from "@/components/CalculatorSchema";
+import FAQSchema from "@/components/FAQSchema";
 
 
 export default function AgeCalculatorPage() {
@@ -127,10 +128,24 @@ export default function AgeCalculatorPage() {
       description="Free online Age Calculator to calculate your exact age in years, months and days."
       url="/utility/age-calculator"
     />
-    <CalculatorSchema
-      name="Age Calculator"
-      description="Free online Age Calculator to calculate your exact age in years, months and days."
-      url="/utility/age-calculator"
+    <FAQSchema
+      faqs={[
+        {
+          question: "How is age calculated?",
+          answer:
+            "Age is calculated by finding the difference between the birth date and the current date.",
+        },
+        {
+          question: "Can I calculate age in years, months and days?",
+          answer:
+            "Yes, this calculator shows exact age in years, months and days.",
+        },
+        {
+          question: "Does the calculator show the next birthday?",
+          answer:
+            "Yes, it calculates the remaining days until your next birthday.",
+        },
+      ]}
     />
 
     <main className="bg-gray-50 min-h-screen">
@@ -250,6 +265,39 @@ export default function AgeCalculatorPage() {
             age along with the countdown to your next birthday.
           </p>
 
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="bg-white rounded-2xl shadow-md p-8 mt-8">
+          <h2 className="text-3xl font-bold mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-lg">
+                How is age calculated?
+              </h3>
+              <p className="text-gray-700">
+                Age is calculated from your birth date to today's date.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                Can I calculate age in years, months and days?
+              </h3>
+              <p className="text-gray-700">
+                Yes, the calculator shows age in years, months and days.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">
+                Does it show my next birthday?
+              </h3>
+              <p className="text-gray-700">
+                Yes, it also shows the number of days remaining until your next birthday.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
         </main>

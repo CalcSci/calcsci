@@ -33,6 +33,11 @@ export default function Home() {
       href: "/finance/sip-calculator",
     },
     {
+      name: "Compound Interest Calculator",
+      icon: "📈",
+      href: "/finance/compound-interest-calculator",
+    },
+    {
       name: "FD Calculator",
       icon: "🏦",
       href: "/finance/fd-calculator",
@@ -150,6 +155,12 @@ export default function Home() {
             <Link href="/finance/sip-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 📈 SIP Calculator
+              </div>
+            </Link>
+
+            <Link href="/finance/compound-interest-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                📈 Compound Interest Calculator
               </div>
             </Link>
 

@@ -170,6 +170,56 @@ export default function LoanEligibilityCalculatorPage() {
             personal loan or business loan.
           </p>
           <h2 className="text-2xl font-bold mb-6">
+            How Loan Eligibility Is Calculated
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Loan eligibility is based on several key factors that
+            lenders evaluate before approving a loan.
+          </p>
+          <ul className="list-disc list-inside text-gray-700 mb-8 space-y-2">
+            <li>Monthly income</li>
+            <li>Existing EMIs</li>
+            <li>Loan tenure</li>
+            <li>Interest rate</li>
+            <li>FOIR (Fixed Obligation to Income Ratio)</li>
+          </ul>
+          <h2 className="text-2xl font-bold mb-6">
+            Factors Affecting Loan Eligibility
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 mb-8 space-y-2">
+            <li>Salary</li>
+            <li>Credit score</li>
+            <li>Age</li>
+            <li>Employment type</li>
+            <li>Existing debts</li>
+          </ul>
+          <h2 className="text-2xl font-bold mb-6">
+            Tips to Improve Loan Eligibility
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 mb-8 space-y-2">
+            <li>Reduce EMIs</li>
+            <li>Improve credit score</li>
+            <li>Increase down payment</li>
+            <li>Apply with a co-applicant</li>
+          </ul>
+          <h2 className="text-2xl font-bold mb-6">
+            Example Calculation
+          </h2>
+          <div className="bg-gray-50 rounded-xl border border-gray-200 p-5 mb-8">
+            <p className="text-gray-700 mb-2">
+              Monthly Income: <strong>₹80,000</strong>
+            </p>
+            <p className="text-gray-700 mb-2">
+              Existing EMI: <strong>₹10,000</strong>
+            </p>
+            <p className="text-gray-700 mb-2">
+              Tenure: <strong>20 Years</strong>
+            </p>
+            <p className="text-gray-700">
+              Eligible Loan: <strong>₹45,00,000</strong>
+            </p>
+          </div>
+          <h2 className="text-2xl font-bold mb-6">
             Frequently Asked Questions
           </h2>
           <h3 className="font-semibold mb-2">

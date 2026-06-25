@@ -68,6 +68,11 @@ export default function Home() {
       href: "/finance/cagr-calculator",
     },
     {
+      name: "Profit Margin Calculator",
+      icon: "📊",
+      href: "/finance/profit-margin-calculator",
+    },
+    {
       name: "EMI Calculator",
       icon: "💰",
       href: "/finance/emi-calculator",
@@ -231,6 +236,12 @@ export default function Home() {
             <Link href="/finance/cagr-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 📈 CAGR Calculator
+              </div>
+            </Link>
+
+            <Link href="/finance/profit-margin-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                📊 Profit Margin Calculator
               </div>
             </Link>
 

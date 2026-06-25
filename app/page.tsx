@@ -82,6 +82,11 @@ export default function Home() {
       icon: "🔬",
       href: "/utility/scientific-calculator",
     },
+    {
+      name: "Fuel Cost Calculator",
+      icon: "⛽",
+      href: "/utility/fuel-cost-calculator",
+    },
   ];
 
   const filteredCalculators = useMemo(() => {
@@ -263,9 +268,11 @@ export default function Home() {
               </div>
             </Link>
 
-            <div className="bg-gray-100 p-3 rounded-xl">
-              ⛽ Fuel Cost Calculator
-            </div>
+            <Link href="/utility/fuel-cost-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                ⛽ Fuel Cost Calculator
+              </div>
+            </Link>
             <Link href="/utility/unit-converter">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 📏 Unit Converter

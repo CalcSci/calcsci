@@ -218,6 +218,12 @@ export default function Home() {
               </div>
             </Link>
 
+            <Link href="/finance/currency-converter">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                💱 Currency Converter
+              </div>
+            </Link>
+
             <Link href="/finance/gst-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 🧾 GST Calculator

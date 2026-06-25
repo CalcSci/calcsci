@@ -33,6 +33,11 @@ export default function Home() {
       href: "/finance/sip-calculator",
     },
     {
+      name: "FD Calculator",
+      icon: "🏦",
+      href: "/finance/fd-calculator",
+    },
+    {
       name: "EMI Calculator",
       icon: "💰",
       href: "/finance/emi-calculator",
@@ -145,6 +150,12 @@ export default function Home() {
             <Link href="/finance/sip-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 📈 SIP Calculator
+              </div>
+            </Link>
+
+            <Link href="/finance/fd-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                🏦 FD Calculator
               </div>
             </Link>
 

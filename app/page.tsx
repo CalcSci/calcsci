@@ -72,6 +72,11 @@ export default function Home() {
       icon: "🔢",
       href: "/engineering/decimal-to-binary-converter",
     },
+    {
+      name: "Scientific Calculator",
+      icon: "🔬",
+      href: "/utility/scientific-calculator",
+    },
   ];
 
   const filteredCalculators = useMemo(() => {
@@ -247,6 +252,12 @@ export default function Home() {
             <Link href="/utility/unit-converter">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 📏 Unit Converter
+              </div>
+            </Link>
+
+            <Link href="/utility/scientific-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                🔬 Scientific Calculator
               </div>
             </Link>
           </div>

@@ -67,6 +67,11 @@ export default function Home() {
       icon: "🧾",
       href: "/finance/gst-calculator",
     },
+    {
+      name: "Decimal to Binary Converter",
+      icon: "🔢",
+      href: "/engineering/decimal-to-binary-converter",
+    },
   ];
 
   const filteredCalculators = useMemo(() => {
@@ -263,6 +268,12 @@ export default function Home() {
             <Link href="/engineering/binary-to-decimal-converter">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 💻 Binary to Decimal Converter
+              </div>
+            </Link>
+
+            <Link href="/engineering/decimal-to-binary-converter">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                🔢 Decimal to Binary Converter
               </div>
             </Link>
 

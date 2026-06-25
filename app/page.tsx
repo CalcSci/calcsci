@@ -48,6 +48,11 @@ export default function Home() {
       href: "/finance/loan-eligibility-calculator",
     },
     {
+      name: "Ohm's Law Calculator",
+      icon: "🔌",
+      href: "/engineering/ohms-law-calculator",
+    },
+    {
       name: "FD Calculator",
       icon: "🏦",
       href: "/finance/fd-calculator",
@@ -244,9 +249,11 @@ export default function Home() {
           </h3>
 
           <div className="space-y-3">
-            <div className="bg-gray-100 p-3 rounded-xl">
-              🔌 Ohm&apos;s Law Calculator
-            </div>
+            <Link href="/engineering/ohms-law-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                🔌 Ohm&apos;s Law Calculator
+              </div>
+            </Link>
 
             <div className="bg-gray-100 p-3 rounded-xl">
               💻 Binary Converter

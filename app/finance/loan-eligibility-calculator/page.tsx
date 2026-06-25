@@ -97,6 +97,60 @@ export default function LoanEligibilityCalculatorPage() {
                     "Yes. The CalcSci Loan Eligibility Calculator is completely free to use.",
                 },
               },
+              {
+                "@type": "Question",
+                name: "What salary is required for a ₹50 lakh home loan?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "A ₹50 lakh home loan typically requires a monthly salary of around ₹1.5 lakh or higher, depending on the lender's FOIR requirements and existing liabilities.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is FOIR?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "FOIR stands for Fixed Obligation to Income Ratio and measures the percentage of income used to pay fixed obligations like EMIs.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can a self-employed person use this calculator?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. Self-employed borrowers can also use this calculator, but actual eligibility may vary based on their income proof and business stability.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Does credit score affect eligibility?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. A strong credit score improves loan eligibility by showing better repayment history and lower risk to lenders.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can I increase my loan eligibility?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. You can increase eligibility by reducing existing EMIs, improving credit score, or adding a co-applicant.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How do banks calculate eligibility?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Banks calculate eligibility using income, expenses, existing debts, credit history, age and employment status.",
+                },
+              },
             ],
           }),
         }}
@@ -230,25 +284,46 @@ export default function LoanEligibilityCalculatorPage() {
             eligible for based on your income and liabilities.
           </p>
           <h3 className="font-semibold mb-2">
-            Does existing EMI affect eligibility?
+            How is loan eligibility calculated?
           </h3>
           <p className="mb-4 text-gray-700">
-            Yes. Existing EMIs reduce your repayment capacity
-            and therefore reduce the loan amount you may qualify for.
+            Lenders look at income, EMIs, tenure, FOIR and credit history to calculate eligibility.
           </p>
           <h3 className="font-semibold mb-2">
-            Is the result exact?
+            What salary is required for a ₹50 lakh home loan?
           </h3>
           <p className="mb-4 text-gray-700">
-            No. It is an estimate. Actual approval depends on
-            lender policies, credit score and documentation.
+            A salary of around ₹1.5 lakh per month may be required, depending on the lender and your existing liabilities.
           </p>
           <h3 className="font-semibold mb-2">
-            Is this calculator free?
+            What is FOIR?
+          </h3>
+          <p className="mb-4 text-gray-700">
+            FOIR is the Fixed Obligation to Income Ratio, measuring how much of your income goes toward fixed payments like EMIs.
+          </p>
+          <h3 className="font-semibold mb-2">
+            Can a self-employed person use this calculator?
+          </h3>
+          <p className="mb-4 text-gray-700">
+            Yes. Self-employed users can use it, though actual lender eligibility may depend on their income documentation.
+          </p>
+          <h3 className="font-semibold mb-2">
+            Does credit score affect eligibility?
+          </h3>
+          <p className="mb-4 text-gray-700">
+            Yes. A strong credit score improves your chances of higher loan eligibility and better interest rates.
+          </p>
+          <h3 className="font-semibold mb-2">
+            Can I increase my loan eligibility?
+          </h3>
+          <p className="mb-4 text-gray-700">
+            Yes. You can increase eligibility by lowering EMIs, improving your credit score, or adding a co-applicant.
+          </p>
+          <h3 className="font-semibold mb-2">
+            How do banks calculate eligibility?
           </h3>
           <p className="text-gray-700">
-            Yes. The CalcSci Loan Eligibility Calculator is
-            completely free to use.
+            Banks calculate eligibility using income, existing debts, credit score, age and employment stability.
           </p>
         </div>
       </section>

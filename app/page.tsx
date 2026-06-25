@@ -57,11 +57,16 @@ export default function Home() {
       icon: "🏦",
       href: "/finance/fd-calculator",
     },
-            {
-              name: "Discount Calculator",
-              icon: "🏷️",
-              href: "/finance/discount-calculator",
-            },
+    {
+      name: "Discount Calculator",
+      icon: "🏷️",
+      href: "/finance/discount-calculator",
+    },
+    {
+      name: "CAGR Calculator",
+      icon: "📈",
+      href: "/finance/cagr-calculator",
+    },
     {
       name: "EMI Calculator",
       icon: "💰",
@@ -220,6 +225,12 @@ export default function Home() {
             <Link href="/finance/discount-calculator">
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
                 🏷️ Discount Calculator
+              </div>
+            </Link>
+
+            <Link href="/finance/cagr-calculator">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                📈 CAGR Calculator
               </div>
             </Link>
 

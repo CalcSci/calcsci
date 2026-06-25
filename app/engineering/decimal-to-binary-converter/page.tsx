@@ -108,18 +108,18 @@ export default function DecimalToBinaryConverterPage() {
       <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           Decimal to Binary Converter
         </h1>
-        <p className="text-xl">
+        <p className="text-base md:text-xl px-4">
           Convert decimal numbers into binary values instantly.
         </p>
       </section>
 
       {/* Calculator */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Enter Decimal Number
           </h2>
 
@@ -130,12 +130,12 @@ export default function DecimalToBinaryConverterPage() {
             onChange={(e) =>
               setDecimal(e.target.value)
             }
-            className="w-full border border-gray-300 rounded-xl p-4 text-lg"
+            className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
           />
 
           <button
             onClick={convert}
-            className="w-full mt-8 bg-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition"
+            className="w-full mt-6 md:mt-8 bg-blue-600 text-white py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-blue-700 transition"
           >
             Convert to Binary
           </button>
@@ -155,7 +155,7 @@ export default function DecimalToBinaryConverterPage() {
 
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">About Decimal to Binary Converter</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">About Decimal to Binary Converter</h2>
           <p className="text-gray-700 mb-4">
             Decimal to Binary Converter helps students, programmers and engineers quickly convert
             decimal numbers into binary values.

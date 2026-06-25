@@ -84,11 +84,11 @@ export default function BMICalculatorPage() {
         <main className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           BMI Calculator
         </h1>
 
-        <p className="text-xl">
+        <p className="text-base md:text-xl px-4">
           Calculate your Body Mass Index instantly.
         </p>
       </section>
@@ -97,7 +97,7 @@ export default function BMICalculatorPage() {
       <section className="max-w-3xl mx-auto px-6 py-16">
         <div className="bg-white rounded-2xl shadow-lg p-8">
 
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Enter Your Details
           </h2>
 
@@ -133,7 +133,7 @@ export default function BMICalculatorPage() {
 
             <button
               onClick={calculateBMI}
-              className="w-full bg-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition"
+              className="w-full mt-6 md:mt-8 bg-blue-600 text-white py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-blue-700 transition"
             >
               Calculate BMI
             </button>
@@ -145,7 +145,7 @@ export default function BMICalculatorPage() {
                   Your BMI
                 </h3>
 
-                <p className="text-4xl font-bold mt-4 text-gray-800">
+                <p className="text-2xl md:text-4xl font-bold mt-4 text-gray-800">
                   {bmi}
                 </p>
 
@@ -164,7 +164,7 @@ export default function BMICalculatorPage() {
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
 
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             About BMI Calculator
           </h2>
 
@@ -189,7 +189,7 @@ export default function BMICalculatorPage() {
       </section>
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8 mt-8">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">

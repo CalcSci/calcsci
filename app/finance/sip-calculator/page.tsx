@@ -113,18 +113,18 @@ export default function SIPCalculatorPage() {
       />
       <main className="bg-gray-50 min-h-screen">
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           SIP Calculator
         </h1>
-        <p className="text-xl">
+        <p className="text-base md:text-xl px-4">
           Calculate Mutual Fund SIP Returns
           Instantly
         </p>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Enter SIP Details
           </h2>
 
@@ -134,21 +134,21 @@ export default function SIPCalculatorPage() {
               placeholder="Monthly Investment (₹)"
               value={monthlyInvestment}
               onChange={(e) => setMonthlyInvestment(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <input
               type="number"
               placeholder="Expected Return (%)"
               value={returnRate}
               onChange={(e) => setReturnRate(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <input
               type="number"
               placeholder="Investment Period (Years)"
               value={years}
               onChange={(e) => setYears(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <button
               onClick={calculateSIP}
@@ -159,7 +159,7 @@ export default function SIPCalculatorPage() {
           </div>
 
           {maturityValue && (
-            <div className="mt-8 bg-green-50 border border-green-300 rounded-xl p-6">
+            <div className="mt-8 bg-green-50 border border-green-300 rounded-xl p-4 md:p-6">
               <h3 className="text-2xl font-bold text-green-700 mb-4">
                 SIP Result
               </h3>
@@ -190,7 +190,7 @@ export default function SIPCalculatorPage() {
       </section>
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             About SIP Calculator
           </h2>
           <p className="text-gray-700 mb-4">

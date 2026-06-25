@@ -97,18 +97,18 @@ export default function PercentageCalculatorPage() {
       />
     <main className="bg-gray-50 min-h-screen">
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           Percentage Calculator
         </h1>
 
-        <p className="text-xl mt-4">
+        <p className="text-base md:text-xl px-4 mt-4">
           Calculate percentages instantly.
         </p>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             What is X% of Y?
           </h2>
 
@@ -120,7 +120,7 @@ export default function PercentageCalculatorPage() {
               onChange={(e) =>
                 setPercentage(e.target.value)
               }
-              className="border border-gray-300 rounded-xl p-4"
+              className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
             />
 
             <input
@@ -130,7 +130,7 @@ export default function PercentageCalculatorPage() {
               onChange={(e) =>
                 setNumber(e.target.value)
               }
-              className="border border-gray-300 rounded-xl p-4"
+              className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
             />
           </div>
 
@@ -157,7 +157,7 @@ export default function PercentageCalculatorPage() {
 
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             About Percentage Calculator
           </h2>
 

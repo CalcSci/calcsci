@@ -157,14 +157,14 @@ export default function LoanEligibilityCalculatorPage() {
       />
       <main className="bg-gray-50 min-h-screen">
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           Loan Eligibility Calculator
         </h1>
-        <p className="text-xl">Estimate Your Loan Eligibility Instantly</p>
+        <p className="text-base md:text-xl px-4">Estimate Your Loan Eligibility Instantly</p>
       </section>
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Enter Your Details
           </h2>
           <div className="space-y-6">
@@ -173,21 +173,21 @@ export default function LoanEligibilityCalculatorPage() {
               placeholder="Monthly Income (₹)"
               value={income}
               onChange={(e) => setIncome(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <input
               type="number"
               placeholder="Existing Monthly EMI (₹)"
               value={existingEmi}
               onChange={(e) => setExistingEmi(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <input
               type="number"
               placeholder="Loan Tenure (Years)"
               value={tenure}
               onChange={(e) => setTenure(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <button
               onClick={calculateEligibility}
@@ -197,7 +197,7 @@ export default function LoanEligibilityCalculatorPage() {
             </button>
           </div>
           {eligibility && (
-            <div className="mt-8 bg-green-50 border border-green-300 rounded-xl p-6">
+            <div className="mt-8 bg-green-50 border border-green-300 rounded-xl p-4 md:p-6">
               <h3 className="text-2xl font-bold text-green-700 mb-4">
                 Estimated Loan Eligibility
               </h3>
@@ -210,7 +210,7 @@ export default function LoanEligibilityCalculatorPage() {
       </section>
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             About Loan Eligibility Calculator
           </h2>
           <p className="text-gray-700 mb-4">

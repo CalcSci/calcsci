@@ -4,21 +4,21 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           Contact Us
         </h1>
 
-        <p className="text-xl">
+        <p className="text-base md:text-xl px-4">
           We'd love to hear from you.
         </p>
       </section>
 
       {/* Contact Card */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
 
         <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
 
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Get in Touch
           </h2>
 

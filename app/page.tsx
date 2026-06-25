@@ -144,7 +144,7 @@ export default function Home() {
 
       {/* Search */}
       <section className="max-w-6xl mx-auto px-6 py-12 text-center">
-        <h2 className="text-3xl font-bold text-gray-800">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
           Find the Right Calculator in Seconds
         </h2>
 
@@ -183,9 +183,9 @@ export default function Home() {
       </section>
 
       {/* Categories */}
-      <section className="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-3 pb-16">
+      <section className="max-w-6xl mx-auto px-4 md:px-6 grid gap-6 md:gap-8 md:grid-cols-3 pb-16">
         {/* Finance */}
-        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+        <div className="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl transition">
           <h3 className="text-2xl font-bold mb-6 text-blue-600">
             📊 Finance
           </h3>
@@ -260,7 +260,7 @@ export default function Home() {
         </div>
 
         {/* Utility */}
-        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+        <div className="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl transition">
           <h3 className="text-2xl font-bold mb-6 text-blue-600">
             🧮 Utility
           </h3>
@@ -310,7 +310,7 @@ export default function Home() {
         </div>
 
         {/* Engineering */}
-        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+        <div className="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl transition">
           <h3 className="text-2xl font-bold mb-6 text-blue-600">
             ⚙️ Engineering
           </h3>

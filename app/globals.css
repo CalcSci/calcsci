@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {  color-scheme: light;}
+body {  overflow-x: hidden;}
+input,select,textarea {  font-size: 16px;}

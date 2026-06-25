@@ -92,10 +92,10 @@ export default function GSTCalculatorPage() {
       </section>
 
       {/* Calculator */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
 
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Enter GST Details
           </h2>
 
@@ -160,7 +160,7 @@ export default function GSTCalculatorPage() {
 
             <button
               onClick={calculateGST}
-              className="w-full bg-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:bg-blue-700"
+              className="w-full mt-6 md:mt-8 bg-blue-600 text-white py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-blue-700"
             >
               Calculate GST
             </button>
@@ -173,7 +173,7 @@ export default function GSTCalculatorPage() {
                     GST Amount
                   </h3>
 
-                  <p className="text-3xl font-bold">
+                  <p className="text-2xl md:text-3xl font-bold">
                     ₹ {gstAmount}
                   </p>
                 </div>
@@ -183,7 +183,7 @@ export default function GSTCalculatorPage() {
                     Final Amount
                   </h3>
 
-                  <p className="text-3xl font-bold">
+                  <p className="text-2xl md:text-3xl font-bold">
                     ₹ {finalAmount}
                   </p>
                 </div>
@@ -199,7 +199,7 @@ export default function GSTCalculatorPage() {
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
 
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             About GST Calculator
           </h2>
 
@@ -220,7 +220,7 @@ export default function GSTCalculatorPage() {
       </section>
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8 mt-8">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">

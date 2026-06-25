@@ -4,12 +4,12 @@ export default function DisclaimerPage() {
 
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20 text-center">
-        <h1 className="text-5xl font-bold mb-4">
-          Disclaimer
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
+            Disclaimer
         </h1>
 
-        <p className="text-xl">
-          Please read this disclaimer carefully before using CalcSci.
+          <p className="text-base md:text-xl px-4">
+            These calculators are provided "as is" without any warranties.
         </p>
       </section>
 

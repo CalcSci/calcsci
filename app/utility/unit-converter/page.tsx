@@ -107,14 +107,14 @@ export default function UnitConverterPage() {
       />
       <main className="bg-gray-50 min-h-screen">
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">Unit Converter</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">Unit Converter</h1>
 
-        <p className="text-xl">Convert Length, Weight and Temperature Units</p>
+        <p className="text-base md:text-xl px-4">Convert Length, Weight and Temperature Units</p>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">Unit Converter</h2>
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Unit Converter</h2>
 
           <select
             value={category}
@@ -152,7 +152,7 @@ export default function UnitConverterPage() {
       </section>
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">About Unit Converter</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">About Unit Converter</h2>
           <p className="text-gray-700 mb-4">
             Unit Converter helps convert common measurement units quickly and accurately.
           </p>

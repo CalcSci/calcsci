@@ -4,11 +4,11 @@ export default function TermsPage() {
 
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           Terms & Conditions
         </h1>
 
-        <p className="text-xl">
+        <p className="text-base md:text-xl px-4">
           Please read these terms carefully before using CalcSci.
         </p>
       </section>
@@ -18,13 +18,13 @@ export default function TermsPage() {
 
         <div className="bg-white p-8 rounded-2xl shadow-lg">
 
-          <h2 className="text-2xl font-bold mb-4">
-            Acceptance of Terms
-          </h2>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
+            Terms and Conditions
+          </h1>
 
-          <p className="text-gray-700 mb-8">
-            By accessing and using CalcSci, you agree to comply with and
-            be bound by these Terms and Conditions.
+          <p className="text-base md:text-xl px-4">
+            Please read these terms carefully before using CalcSci.
+          </p>
           </p>
 
           <h2 className="text-2xl font-bold mb-4">

@@ -88,17 +88,17 @@ export default function DateDifferenceCalculatorPage() {
 
       <main className="bg-gray-50 min-h-screen">
         <section className="bg-blue-600 text-white py-16 text-center">
-          <h1 className="text-5xl font-bold mb-4">
-            Date Difference Calculator
-          </h1>
-          <p className="text-xl">
-            Calculate the number of days between two dates.
-          </p>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
+              Date Difference Calculator
+            </h1>
+            <p className="text-base md:text-xl px-4">
+              Calculate the number of days between two dates.
+            </p>
         </section>
 
-        <section className="max-w-4xl mx-auto px-6 py-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-center mb-8">
+        <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+          <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
               Select Dates
             </h2>
 
@@ -107,14 +107,14 @@ export default function DateDifferenceCalculatorPage() {
                 type="date"
                 value={startDate}
                 onChange={(e) => setStartDate(e.target.value)}
-                className="border border-gray-300 rounded-xl p-4"
+                className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
               />
 
               <input
                 type="date"
                 value={endDate}
                 onChange={(e) => setEndDate(e.target.value)}
-                className="border border-gray-300 rounded-xl p-4"
+                className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
               />
             </div>
 
@@ -140,7 +140,7 @@ export default function DateDifferenceCalculatorPage() {
 
         <section className="max-w-4xl mx-auto px-6 pb-16">
           <div className="bg-white rounded-2xl shadow-md p-8">
-            <h2 className="text-3xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
               About Date Difference Calculator
             </h2>
             <p className="text-gray-700 mb-4">

@@ -98,16 +98,16 @@ export default function OhmsLawCalculatorPage() {
       />
       <main className="bg-gray-50 min-h-screen">
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           Ohm&apos;s Law Calculator
         </h1>
-        <p className="text-xl">
+        <p className="text-base md:text-xl px-4">
           Calculate Electrical Current Using Voltage and Resistance
         </p>
       </section>
-      <section className="max-w-4xl mx-auto px-6 py-16">
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
         <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Enter Values
           </h2>
           <div className="space-y-6">
@@ -116,14 +116,14 @@ export default function OhmsLawCalculatorPage() {
               placeholder="Voltage (V)"
               value={voltage}
               onChange={(e) => setVoltage(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <input
               type="number"
               placeholder="Resistance (Ω)"
               value={resistance}
               onChange={(e) => setResistance(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl p-4"
+              className="w-full border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg"
             />
             <button
               onClick={calculateCurrent}
@@ -133,7 +133,7 @@ export default function OhmsLawCalculatorPage() {
             </button>
           </div>
           {current && (
-            <div className="mt-8 bg-green-50 border border-green-300 rounded-xl p-6">
+            <div className="mt-8 bg-green-50 border border-green-300 rounded-xl p-4 md:p-6">
               <h3 className="text-2xl font-bold text-green-700 mb-4">
                 Current
               </h3>
@@ -144,7 +144,7 @@ export default function OhmsLawCalculatorPage() {
       </section>
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             About Ohm's Law Calculator
           </h2>
           <p className="text-gray-700 mb-4">

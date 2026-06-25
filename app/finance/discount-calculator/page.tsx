@@ -111,14 +111,14 @@ export default function DiscountCalculatorPage() {
       <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">Discount Calculator</h1>
-        <p className="text-xl">Calculate discount amount and final sale price instantly.</p>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">Discount Calculator</h1>
+        <p className="text-base md:text-xl px-4">Calculate discount amount and final sale price instantly.</p>
       </section>
 
       {/* Calculator */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">Discount Calculator</h2>
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Discount Calculator</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <input
               type="number"
@@ -127,7 +127,7 @@ export default function DiscountCalculatorPage() {
               onChange={(e) =>
                 setOriginalPrice(e.target.value)
               }
-              className="border border-gray-300 rounded-xl p-4"
+              className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
             />
             <input
               type="number"
@@ -136,12 +136,12 @@ export default function DiscountCalculatorPage() {
               onChange={(e) =>
                 setDiscountPercent(e.target.value)
               }
-              className="border border-gray-300 rounded-xl p-4"
+              className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
             />
           </div>
           <button
             onClick={calculateDiscount}
-            className="w-full mt-8 bg-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:bg-blue-700"
+            className="w-full mt-6 md:mt-8 bg-blue-600 text-white py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-blue-700"
           >
             Calculate Discount
           </button>
@@ -157,7 +157,7 @@ export default function DiscountCalculatorPage() {
 
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">About Discount Calculator</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">About Discount Calculator</h2>
           <p className="text-gray-700 mb-4">
             Discount Calculator helps shoppers quickly determine how much money they save during sales,
             promotions and special offers.

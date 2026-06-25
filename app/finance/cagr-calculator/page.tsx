@@ -115,12 +115,12 @@ export default function CAGRCalculatorPage() {
 
       <main className="bg-gray-50 min-h-screen">
       <section className="bg-blue-600 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold mb-4">CAGR Calculator</h1>
-        <p className="text-xl">Calculate Compound Annual Growth Rate instantly.</p>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">CAGR Calculator</h1>
+        <p className="text-base md:text-xl px-4">Calculate Compound Annual Growth Rate instantly.</p>
       </section>
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">CAGR Calculator</h2>
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">CAGR Calculator</h2>
           <div className="grid gap-4">
             <input
               type="number"
@@ -129,7 +129,7 @@ export default function CAGRCalculatorPage() {
               onChange={(e) =>
                 setBeginningValue(e.target.value)
               }
-              className="border border-gray-300 rounded-xl p-4"
+              className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
             />
             <input
               type="number"
@@ -138,7 +138,7 @@ export default function CAGRCalculatorPage() {
               onChange={(e) =>
                 setEndingValue(e.target.value)
               }
-              className="border border-gray-300 rounded-xl p-4"
+              className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
             />
             <input
               type="number"
@@ -147,19 +147,19 @@ export default function CAGRCalculatorPage() {
               onChange={(e) =>
                 setYears(e.target.value)
               }
-              className="border border-gray-300 rounded-xl p-4"
+              className="border border-gray-300 rounded-xl p-3 md:p-4 text-base md:text-lg w-full"
             />
           </div>
           <button
             onClick={calculateCAGR}
-            className="w-full mt-8 bg-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:bg-blue-700"
+            className="w-full mt-6 md:mt-8 bg-blue-600 text-white py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-blue-700"
           >
             Calculate CAGR
           </button>
           {cagr && (
             <div className="bg-green-50 border border-green-300 rounded-xl p-6 text-center mt-8">
               <h3 className="text-2xl font-bold text-green-700">CAGR Result</h3>
-              <p className="text-3xl font-bold mt-4">{cagr}%</p>
+              <p className="text-2xl md:text-3xl font-bold mt-4">{cagr}%</p>
             </div>
           )}
         </div>
@@ -167,7 +167,7 @@ export default function CAGRCalculatorPage() {
 
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-md p-8">
-          <h2 className="text-3xl font-bold mb-6">About CAGR Calculator</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">About CAGR Calculator</h2>
           <p className="text-gray-700 mb-4">
             CAGR (Compound Annual Growth Rate) Calculator helps
             investors determine the average annual growth rate

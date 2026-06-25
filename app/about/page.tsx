@@ -4,19 +4,19 @@ export default function AboutPage() {
          <main className="bg-gray-50 min-h-screen">
 
         <section className="bg-blue-600 text-white py-20 text-center">
-          <h1 className="text-5xl font-bold mb-4">
-            About CalcSci
-          </h1>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
+              About CalcSci
+            </h1>
 
-          <p className="text-xl">
-            Free Online Calculators & Scientific Tools
-          </p>
+            <p className="text-base md:text-xl px-4">
+              Free Online Calculators & Scientific Tools
+            </p>
         </section>
 
         <section className="max-w-5xl mx-auto px-6 py-16">
 
           <div className="bg-white p-8 rounded-2xl shadow-lg mb-10">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Our Mission
             </h2>
 

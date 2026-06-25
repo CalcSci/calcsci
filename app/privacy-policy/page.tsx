@@ -4,11 +4,11 @@ export default function PrivacyPolicyPage() {
 
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20 text-center">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
           Privacy Policy
         </h1>
 
-        <p className="text-xl">
+        <p className="text-base md:text-xl px-4">
           Your privacy is important to us.
         </p>
       </section>
@@ -18,13 +18,13 @@ export default function PrivacyPolicyPage() {
 
         <div className="bg-white p-8 rounded-2xl shadow-lg">
 
-          <h2 className="text-2xl font-bold mb-4">
-            Information We Collect
-          </h2>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 px-4">
+            Privacy Policy
+          </h1>
 
-          <p className="text-gray-700 mb-8">
-            CalcSci may collect limited information such as email
-            addresses submitted through our contact page and anonymous
+          <p className="text-base md:text-xl px-4">
+            We respect your privacy and are committed to protecting it.
+          </p>
             usage information through analytics tools.
           </p>
 

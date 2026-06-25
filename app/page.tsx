@@ -260,9 +260,11 @@ export default function Home() {
               </div>
             </Link>
 
-            <div className="bg-gray-100 p-3 rounded-xl">
-              💻 Binary Converter
-            </div>
+            <Link href="/engineering/binary-to-decimal-converter">
+              <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 cursor-pointer">
+                💻 Binary to Decimal Converter
+              </div>
+            </Link>
 
             <div className="bg-gray-100 p-3 rounded-xl">
               📡 dB Calculator
